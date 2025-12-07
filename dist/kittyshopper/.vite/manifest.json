@@ -1,0 +1,38 @@
+{
+  "_worker-entry-D5gjFqTD.js": {
+    "file": "assets/worker-entry-D5gjFqTD.js",
+    "name": "worker-entry",
+    "dynamicImports": [
+      "node_modules/agents/node_modules/ai/dist/index.mjs",
+      "node_modules/mimetext/dist/mimetext.node.es.js",
+      "node_modules/agents/node_modules/ai/dist/index.mjs"
+    ]
+  },
+  "node_modules/agents/node_modules/ai/dist/index.mjs": {
+    "file": "assets/index-DM33Hdgc.js",
+    "name": "index",
+    "src": "node_modules/agents/node_modules/ai/dist/index.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "_worker-entry-D5gjFqTD.js"
+    ]
+  },
+  "node_modules/mimetext/dist/mimetext.node.es.js": {
+    "file": "assets/mimetext.node.es-GrtLiknx.js",
+    "name": "mimetext.node.es",
+    "src": "node_modules/mimetext/dist/mimetext.node.es.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_worker-entry-D5gjFqTD.js"
+    ]
+  },
+  "virtual:cloudflare/worker-entry": {
+    "file": "index.js",
+    "name": "index",
+    "src": "virtual:cloudflare/worker-entry",
+    "isEntry": true,
+    "imports": [
+      "_worker-entry-D5gjFqTD.js"
+    ]
+  }
+}
